@@ -1,9 +1,6 @@
 package ar.edu.backend.juegos;
 
-import java.util.Comparator;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class ServicioJuegos {
@@ -56,9 +53,10 @@ public class ServicioJuegos {
     }
 
     public String panorama() {
-        return String.format("Panorama: %d juegos | Categorías: %s", 
+        return String.format(Locale.US, "Panorama: %d juegos | Total Puntos: %.2f | Por Tipo: %s | Categorías: %s",
                 juegos.size(),
-                new java.util.TreeMap<>(contarJuegosPorCategoria()));
-        // rari con esto, no se si ponerlo new java.util.TreeMap<>(contarJuegosPorTipo());
+                calcularSumaPuntuacionAjustada(),
+                new java.util.TreeMap<>(contarJuegosPorCategoria()),
+                new java.util.TreeMap<>(contarJuegosPorTipo()));
     }
 }
