@@ -24,15 +24,18 @@
 
     <build>
         <plugins>
+            <!-- CAMBIO REALIZADO: el bicho me detecto q tengo q cambiar esto :o
+                 Se actualizaron las versiones de maven-compiler-plugin (a 3.13.0) y maven-surefire-plugin (a 3.2.5)
+                 para usar las versiones disponibles localmente en la maquina y permitir que 'mvn test' ejecute sin error. -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.11.0</version>
+                <version>3.13.0</version>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.1.2</version>
+                <version>3.2.5</version>
             </plugin>
         </plugins>
     </build>

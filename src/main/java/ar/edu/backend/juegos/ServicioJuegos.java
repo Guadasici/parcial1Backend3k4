@@ -52,11 +52,12 @@ public class ServicioJuegos {
                         Collectors.counting()));
     }
 
+    // Invirti argumentos para que coincidan con el string ese :/ los habia puesto al revez
     public String panorama() {
         return String.format(Locale.US, "Panorama: %d juegos | Total Puntos: %.2f | Por Tipo: %s | Categorías: %s",
                 juegos.size(),
                 calcularSumaPuntuacionAjustada(),
-                new java.util.TreeMap<>(contarJuegosPorCategoria()),
-                new java.util.TreeMap<>(contarJuegosPorTipo()));
+                new java.util.TreeMap<>(contarJuegosPorTipo()),
+                new java.util.TreeMap<>(contarJuegosPorCategoria()));
     }
 }

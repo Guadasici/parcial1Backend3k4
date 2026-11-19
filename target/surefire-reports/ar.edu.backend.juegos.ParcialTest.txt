@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: ar.edu.backend.juegos.ParcialTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 s -- in ar.edu.backend.juegos.ParcialTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.010 s -- in ar.edu.backend.juegos.ParcialTest
